@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox Pricing Tables.</title>
+    <meta
+      name="description"
+      content="These pricing tables can be used to display different pricing plans for your products or services, and can include details such as features, prices, and payment options."
+    />
+    <meta name="author" content="JavaScript Ninja" />
+    <meta name="copyright" content="@2023" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style>
+      .pricing-table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .pricing-box {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+      }
+
+      .pricing-box h2 {
+        color: #333;
+        font-size: 24px;
+        margin-top: 0;
+      }
+
+      .price {
+        color: #00bfff;
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      button {
+        background-color: #00bfff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0099cc;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-table">
+      <div class="pricing-box">
+        <h2>Basic</h2>
+        <p class="price">$10/month</p>
+        <ul>
+          <li>5GB Storage</li>
+          <li>10 Email Accounts</li>
+          <li>24/7 Support</li>
+        </ul>
+        <button>Sign Up</button>
+      </div>
+
+      <div class="pricing-box">
+        <h2>Pro</h2>
+        <p class="price">$20/month</p>
+        <ul>
+          <li>20GB Storage</li>
+          <li>25 Email Accounts</li>
+          <li>24/7 Support</li>
+        </ul>
+        <button>Sign Up</button>
+      </div>
+
+      <div class="pricing-box">
+        <h2>Premium</h2>
+        <p class="price">$30/month</p>
+        <ul>
+          <li>50GB Storage</li>
+          <li>50 Email Accounts</li>
+          <li>24/7 Support</li>
+        </ul>
+        <button>Sign Up</button>
+      </div>
+    </div>
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> JavaScript Ninja 2023. All rights
+        reserved.
+      </p>
+    </footer>
+    <script>
+      var currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").innerHTML = currentYear;
+    </script>
+  </body>
+</html>
